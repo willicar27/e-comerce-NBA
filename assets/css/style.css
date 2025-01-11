@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
 }
-
 .grid-container {
     width: 100vw;
     height: 100vh;
@@ -16,6 +15,7 @@
     grid-template-rows: 15% 1fr 5% ;
     grid-template-columns: 1fr 90% ;
 }
+/*navbar*/
 .navbar {
     grid-area: navbar; 
     background-image: linear-gradient(to right, #081981, #6e007a, #a40065, #c80047, #da0222);
@@ -26,23 +26,24 @@
     color: aliceblue;
     font-size: 40px; 
 }
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 10%;
+    margin: 5px;
+    margin-top: 10px;
+}
+/*aside*/
 .aside {
     grid-area: aside;
     background-color: lightgray;}
-.main {
-    grid-area: main;
-    /*border: 1px solid black;*/|
-    background-color: rgb(254, 250, 250);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 2em;
-    gap: 20px;}
-.footer {
-    grid-area: footer;
-    border: 1px solid black;
-    background-color: rgb(6, 51, 66);
-    color: white;
-    text-align: center;
+li {
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.832);
+    }
+span {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.619);
 }
 .lateral {
     display: flex;
@@ -51,21 +52,15 @@
     justify-content: start;
     margin: 15px;
 }
-.logo {
-    width: 150px;
-    height: auto;
-    border-radius: 10%;
-    margin: 5px;
-    margin-top: 10px;
-}
-li {
-    font-size: 20px;
-    color:rgba(0, 0, 0, 0.832);
-}
-span {
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.619);
-}
+/*main*/
+.main {
+    grid-area: main;
+    /*border: 1px solid black;*/|
+    background-color: rgb(254, 250, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 20px;}
 .cart {
     background-color: #e0e1e2;
     display: flex;
@@ -85,15 +80,23 @@ img {
     object-fit:contein;
     width: 100%;
     height: 100%;
-    }
+}
 button {
-width: 80%;
+    width: 80%;
     background-image: linear-gradient(to right, #081981, #6e007a, #a40065, #c80047, #da0222);
-padding: 10px;
-margin: 5px;
+    padding: 10px;
+    margin: 5px;
     color: white;
     font-size: 15px;
     border-radius: 15px;
+}
+/*footer*/
+.footer {
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: rgb(6, 51, 66);
+    color: white;
+    text-align: center;
 }
 footer {
     padding: 5px;

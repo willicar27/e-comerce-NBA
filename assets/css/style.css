@@ -13,12 +13,11 @@
     "navbar navbar"
     "aside main"
     "footer footer";
-    grid-template-rows: 10% 1fr 5% ;
+    grid-template-rows: 15% 1fr 5% ;
     grid-template-columns: 1fr 90% ;
 }
 .navbar {
-    grid-area: navbar;
-    
+    grid-area: navbar; 
     background-image: linear-gradient(to right, #081981, #6e007a, #a40065, #c80047, #da0222);
     display: flex;
     flex-direction: row;
@@ -29,22 +28,15 @@
 }
 .aside {
     grid-area: aside;
-    background-color: lightgray;
-    
-}
+    background-color: lightgray;}
 .main {
     grid-area: main;
-    border: 1px solid black;
+    /*border: 1px solid black;*/|
     background-color: rgb(254, 250, 250);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    
-
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 20px;}
 .footer {
     grid-area: footer;
     border: 1px solid black;
@@ -75,8 +67,6 @@ span {
     color: rgba(0, 0, 0, 0.619);
 }
 .cart {
-    width: 20%;
-    height: 70%;
     background-color: #e0e1e2;
     display: flex;
     flex-direction: column;
@@ -87,10 +77,8 @@ span {
     border: rgba(42, 11, 135, 0.553) solid;
 }
 .creativo {
-    background-color: #a40065;
     width: 100%;
     height: auto;
-    
 }
 img {
     width: 10px;
@@ -98,9 +86,16 @@ img {
     width: 100%;
     height: 100%;
     }
-/*.productos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 10px;
-}*/
+button {
+width: 80%;
+    background-image: linear-gradient(to right, #081981, #6e007a, #a40065, #c80047, #da0222);
+padding: 10px;
+margin: 5px;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+}
+footer {
+    padding: 5px;
+    fo
+}
